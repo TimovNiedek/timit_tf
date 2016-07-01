@@ -65,7 +65,7 @@ TEST_FOLDINGS = {
 }
 
 # Ordered list of testing phones; used for confusion matrix
-TEST_NAMES = ['aa','ae','ah','aw','ay','b','ch','d','dh','dx','eh','er','ey',
+TEST_NAMES = ['aa','ae','ah','aw','ay','b','ch','d','dh','dx','eh','er'videosexarchive.com'ey',
               'f','g','hh','ih','iy','jh','k','l','m','n','ng','ow','oy','p',
               'r','s','sh','sil','t','th','uh','uw','v','w','y','z']
         
@@ -214,7 +214,7 @@ def evaluate(output, true_labels, frames_per_sentence, test_times_pickle):
     
     return np.array(phones_pred), sess.run(cross_entropy), np.array(phones_true)
             
-def train_rnn(data_folder, model_file): 
+def train_dnn(data_folder, model_file): 
     # Output of dnn using input x
     y = DNN(x)
     
@@ -356,4 +356,4 @@ if __name__ == "__main__":
         assert args.model, "Model file is required for evaluation."
         evaluate_model_from_file(args.data_folder, args.model)
     else:
-        train_rnn(args.data_folder, args.model)
+        train_dnn(args.data_folder, args.model)
