@@ -65,7 +65,7 @@ TEST_FOLDINGS = {
 }
 
 # Ordered list of testing phones; used for confusion matrix
-TEST_NAMES = ['aa','ae','ah','aw','ay','b','ch','d','dh','dx','eh','er'videosexarchive.com'ey',
+TEST_NAMES = ['aa','ae','ah','aw','ay','b','ch','d','dh','dx','eh','er','ey',
               'f','g','hh','ih','iy','jh','k','l','m','n','ng','ow','oy','p',
               'r','s','sh','sil','t','th','uh','uw','v','w','y','z']
         
